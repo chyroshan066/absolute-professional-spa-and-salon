@@ -69,7 +69,7 @@ export default function ScriptsAndProviders({ children }: ScriptsAndProvidersPro
                         onError={() => console.error('❌ Failed to load Magnific Popup')}
                     />
                     <Script
-                        src="/js/jquery.aos.js"
+                        src="/js/aos.js"
                         strategy="afterInteractive"
                         onError={() => console.error('❌ Failed to load Aos')}
                     />

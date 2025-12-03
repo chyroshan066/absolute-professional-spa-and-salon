@@ -11709,3 +11709,22 @@ textarea.form-control {
     stroke-dashoffset: -136px; 
   } 
 }
+
+
+
+
+
+
+
+
+
+
+.js-fullheight {
+  min-height: 100vh !important;
+  display: flex; 
+  align-items: center;
+}
+.ftco-animate {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
