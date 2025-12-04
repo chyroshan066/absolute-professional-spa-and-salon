@@ -34,7 +34,7 @@ export interface Email {
     email: string;
 }
 
-interface Text {
+export interface Text {
     text: string;
 }
 

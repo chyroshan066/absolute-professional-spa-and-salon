@@ -43,7 +43,10 @@ export const Testimonials = memo(() => {
                     className="col-md-10"
                 />
 
-                <div className="row ftco-animate">
+                <div
+                    className="row"
+                    data-aos="fade-up"
+                >
                     <div className="col-md-12">
                         <div
                             ref={carouselRef}
@@ -86,4 +89,6 @@ export const Testimonials = memo(() => {
             </div>
         </section>
     )
-})
+});
+
+Testimonials.displayName = "Testimonials";

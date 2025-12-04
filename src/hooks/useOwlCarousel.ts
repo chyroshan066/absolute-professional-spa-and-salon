@@ -187,7 +187,7 @@ export const useOwlCarousel = (
                     const $carousel = window.$(currentCarouselRef);
                     if ($carousel.hasClass('owl-loaded') && $carousel.data('owl.carousel')) {
                         $carousel.trigger('destroy.owl.carousel');
-                        $carousel.find('.owl-stage-outer').children().unwrap();
+                        $carousel.find('.owl-stage-outer').children().unwrap();  // "unwrap" removes the parent of the selected elements, effectively deleting the parent from the DOM while leaving the children in place.
                         $carousel.removeClass('owl-loaded owl-drag');
                     }
                 } catch (error) {
