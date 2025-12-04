@@ -1,2 +1,6 @@
 export * from "./structured-data";
 export * from "./navlinks";
+export * from "./offers";
+export * from "./services";
+export * from "./treatments";
+export * from "./therapies";

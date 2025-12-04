@@ -11757,3 +11757,24 @@ textarea.form-control {
   opacity: 0;
   animation: slide-up-fade-in 1s ease-out forwards;
 }
+
+.myaccordion .btn-link .oi {
+  color: #000 !important;
+}
+.myaccordion .btn-link .oi-plus {
+  display: none;
+}
+.myaccordion .btn-link .oi-minus {
+  display: block;
+}
+/* When collapsed (closed), hide minus, show plus */
+.myaccordion .btn-link.collapsed .oi-minus {
+  display: none;
+}
+.myaccordion .btn-link.collapsed .oi-plus {
+  display: block;
+}
+.icon-toggle {
+  margin-left: 10px;
+  font-size: 11px;
+}

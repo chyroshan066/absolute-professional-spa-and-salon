@@ -50,6 +50,23 @@ interface Icon {
     icon: string;
 }
 
+interface Index {
+    index: string;
+}
+
+interface Header {
+    header: string;
+}
+
 export interface NavLink extends Name, Href {}
 export interface Offer extends ImgSrc, Title, Text {}
 export interface Service extends Icon, Title, Text {}
+export interface Treatment extends Service, ClassName {}
+
+export interface Therapy extends Index, Header {
+    section: {
+        title: string;
+        duration: number;
+        price: number;
+    }[];
+}

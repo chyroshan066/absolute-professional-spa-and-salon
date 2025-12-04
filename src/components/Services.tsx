@@ -1,4 +1,4 @@
-import { SERVICES } from "@/constants/services";
+import { SERVICES } from "@/constants";
 import { memo } from "react";
 
 export const Services = memo(() => (

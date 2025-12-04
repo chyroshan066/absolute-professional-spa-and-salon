@@ -1,4 +1,4 @@
-import { OFFERS } from "@/constants/offers";
+import { OFFERS } from "@/constants";
 import Link from "next/link";
 import { memo } from "react";
 
