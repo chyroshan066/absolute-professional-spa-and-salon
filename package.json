@@ -12,6 +12,7 @@
     "@emailjs/browser": "^4.4.1",
     "@hookform/resolvers": "^5.2.2",
     "@vercel/analytics": "^1.5.0",
+    "aos": "^2.3.4",
     "clsx": "^2.1.1",
     "jquery": "^3.7.1",
     "next": "15.5.6",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/aos": "^3.0.7",
     "@types/jquery": "^3.5.33",
     "@types/node": "^20",
     "@types/react": "^19",

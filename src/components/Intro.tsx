@@ -17,16 +17,25 @@ export const Intro = memo(() => (
         <div className="container">
             <div className="row justify-content-end">
                 <div className="col-md-6">
-                    <div className="heading-section ftco-animate">
+                    <div
+                        className="heading-section ftco-animate"
+                        data-aos="fade-up"
+                    >
                         <h2 className="mb-4">Benefits of Doing Spa &amp; Massage</h2>
                     </div>
-                    <p className="ftco-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <p
+                        className="ftco-animate"
+                        data-aos="fade-up"
+                        data-aos-delay="50"
+                    >Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 
                     <ul className="mt-5 do-list">
                         {INTROTEXT.map((message, index) => (
                             <li
                                 key={index}
                                 className="ftco-animate"
+                                data-aos="fade-up"
+                                data-aos-delay={50 + (index * 10)}
                             >
                                 <Link href="#">
                                     <span className="ion-ios-checkmark-circle mr-3" />Spa &amp; {message}

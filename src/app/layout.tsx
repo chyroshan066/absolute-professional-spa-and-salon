@@ -1,4 +1,3 @@
-import { headers } from 'next/headers';
 import type { Metadata, Viewport } from "next";
 import "@/styles/open-iconic-bootstrap.min.css";
 import "@/styles/animate.css";
@@ -10,6 +9,7 @@ import "@/styles/bootstrap-datepicker.css";
 import "@/styles/jquery.timepicker.css";
 import "@/styles/flaticon.css";
 import "@/styles/icomoon.css";
+import "@/styles/ionicons.min.css";
 import "./globals.css";
 import IonicScripts from "@/utils/IonicScripts";
 import AnalyticsWrapper from "@/utils/AnalyticsWrapper";
