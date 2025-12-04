@@ -18,13 +18,12 @@ export const Intro = memo(() => (
             <div className="row justify-content-end">
                 <div className="col-md-6">
                     <div
-                        className="heading-section ftco-animate"
+                        className="heading-section"
                         data-aos="fade-up"
                     >
                         <h2 className="mb-4">Benefits of Doing Spa &amp; Massage</h2>
                     </div>
                     <p
-                        className="ftco-animate"
                         data-aos="fade-up"
                         data-aos-delay="50"
                     >Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
@@ -33,7 +32,6 @@ export const Intro = memo(() => (
                         {INTROTEXT.map((message, index) => (
                             <li
                                 key={index}
-                                className="ftco-animate"
                                 data-aos="fade-up"
                                 data-aos-delay={50 + (index * 10)}
                             >

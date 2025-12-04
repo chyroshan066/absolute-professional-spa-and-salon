@@ -11753,3 +11753,7 @@ textarea.form-control {
   opacity: 0;
   animation: slide-up-fade-in 1s ease-out forwards;
 }
+.ftco-section-services .ftco-animate {
+  opacity: 0;
+  animation: slide-up-fade-in 1s ease-out forwards;
+}

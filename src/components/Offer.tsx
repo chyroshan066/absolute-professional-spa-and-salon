@@ -7,11 +7,11 @@ export const Offer = memo(() => (
         <div className="container">
             <div className="row no-gutters">
                 {OFFERS.map((offer, index) => (
-                    <div className="col-md-4 d-flex align-items-stretch">
-                        <div
-                            key={index}
-                            className={`offer-deal text-center px-2 px-lg-5 ${index === 1 && 'active'}`}
-                        >
+                    <div
+                        key={index}
+                        className="col-md-4 d-flex align-items-stretch"
+                    >
+                        <div className={`offer-deal text-center px-2 px-lg-5 ${index === 1 && 'active'}`}>
                             <div
                                 className="img"
                                 style={{ backgroundImage: `url(${offer.imgSrc})` }}

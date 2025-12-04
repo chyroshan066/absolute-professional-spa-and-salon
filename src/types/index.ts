@@ -46,5 +46,10 @@ interface Href {
     href: string;
 }
 
+interface Icon {
+    icon: string;
+}
+
 export interface NavLink extends Name, Href {}
 export interface Offer extends ImgSrc, Title, Text {}
+export interface Service extends Icon, Title, Text {}
