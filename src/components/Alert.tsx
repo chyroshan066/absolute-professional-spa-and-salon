@@ -1,7 +1,7 @@
 "use client";
 
 import { memo, useCallback, useEffect, useState } from "react";
-import { Icon } from "@iconify/react";
+// import { Icon } from "@iconify/react";
 
 type AlertType = "success" | "error";
 
@@ -104,7 +104,7 @@ export const Alert = memo(({
 
                 {/* Alert Icon */}
                 <div className={`${styles.icon} flex-shrink-0 mt-0.5`}>
-                    <Icon icon={styles.name} className="text-4xl" />
+                    {/* <Icon icon={styles.name} className="text-4xl" /> */}
                 </div>
 
                 <div className="flex-1 min-w-0">
@@ -124,7 +124,7 @@ export const Alert = memo(({
                     className={`${styles.closeButton} flex-shrink-0 p-1 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent focus:ring-current cursor-pointer`}
                     aria-label="Dismiss alert"
                 >
-                    <Icon icon="material-symbols-light:close-rounded" className="text-4xl" />
+                    {/* <Icon icon="material-symbols-light:close-rounded" className="text-4xl" /> */}
                 </button>
             </div>
 

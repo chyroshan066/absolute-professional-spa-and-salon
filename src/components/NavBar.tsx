@@ -3,13 +3,36 @@
 import { NAVLINKS } from "@/constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { memo } from "react";
+import { memo, useEffect, useRef } from "react";
 
 export const NavBar = memo(() => {
+    const navbarRef = useRef<HTMLElement>(null);
     const pathname = usePathname();
+
+    useEffect(() => {
+        const navbar = navbarRef.current;
+
+        if (!navbar) return;
+
+        // Sticky Navbar on scroll
+        const handleScroll = () => {
+            if (window.scrollY > 40) {
+                navbar.classList.add('sticky-top');
+            } else {
+                navbar.classList.remove('sticky-top');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <nav
+            ref={navbarRef}
             className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
             id="ftco-navbar"
         >

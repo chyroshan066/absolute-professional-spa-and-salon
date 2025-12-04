@@ -11710,21 +11710,46 @@ textarea.form-control {
   } 
 }
 
-
-
-
-
-
-
-
-
-
 .js-fullheight {
   min-height: 100vh !important;
   display: flex; 
   align-items: center;
 }
 .ftco-animate {
-    opacity: 1 !important;
-    visibility: visible !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.navbar.sticky-top {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: white !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+  z-index: 1030;
+  animation: slideDown 0.3s ease;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-wrap .ftco-animate {
+  opacity: 0;
+  animation: slide-up-fade-in 1s ease-out forwards;
 }

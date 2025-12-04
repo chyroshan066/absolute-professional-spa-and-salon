@@ -1,3 +1,4 @@
+import { headers } from 'next/headers';
 import type { Metadata, Viewport } from "next";
 import "@/styles/open-iconic-bootstrap.min.css";
 import "@/styles/animate.css";
