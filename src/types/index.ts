@@ -54,6 +54,14 @@ interface Index {
     index: string;
 }
 
+interface Duration {
+    duration: number | string;
+}
+
+interface Price {
+    price: number;
+}
+
 export interface Header {
     header: string;
 }
@@ -70,3 +78,7 @@ export interface Therapy extends Index, Header {
         price: number;
     }[];
 }
+
+export interface Pricing extends Duration, Price {
+    features: string[];
+} 
