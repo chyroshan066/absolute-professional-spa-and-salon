@@ -41,6 +41,12 @@ export default function ScriptsAndProviders({ children }: ScriptsAndProvidersPro
             {jQueryLoaded && (
                 <>
                     <Script
+                        src="/js/owl.carousel.min.js"
+                        strategy="afterInteractive"
+                        onLoad={() => window.dispatchEvent(new CustomEvent('owlCarouselReady'))}
+                        onError={(e) => console.error('❌ Failed to load Owl Carousel script:', e)}
+                    />
+                    <Script
                         src="/js/popper.min.js"
                         strategy="afterInteractive"
                         onError={() => console.error('❌ Failed to load Popper')}
@@ -59,12 +65,6 @@ export default function ScriptsAndProviders({ children }: ScriptsAndProvidersPro
                         src="/js/jquery.stellar.min.js"
                         strategy="afterInteractive"
                         onError={() => console.error('❌ Failed to load Stellar')}
-                    />
-                    <Script
-                        src="/js/owl.carousel.min.js"
-                        strategy="afterInteractive"
-                        onLoad={() => window.dispatchEvent(new CustomEvent('owlCarouselReady'))}
-                        onError={(e) => console.error('❌ Failed to load Owl Carousel script:', e)}
                     />
                     <Script
                         src="/js/jquery.magnific-popup.min.js"
