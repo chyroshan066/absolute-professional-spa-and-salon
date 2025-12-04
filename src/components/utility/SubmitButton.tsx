@@ -1,5 +1,4 @@
 import { memo } from "react";
-import styles from "../../Footer/Footer.module.css";
 import { ClassName } from "@/types";
 
 interface SubmitButtonProps extends ClassName {

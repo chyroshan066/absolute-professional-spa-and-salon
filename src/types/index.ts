@@ -47,3 +47,4 @@ interface Href {
 }
 
 export interface NavLink extends Name, Href {}
+export interface Offer extends ImgSrc, Title, Text {}
