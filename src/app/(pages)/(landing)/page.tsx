@@ -3,6 +3,7 @@ import { Hero } from "./_components/Hero";
 import { Offer } from "@/components/Offer";
 import { Services } from "@/components/Services";
 import { Treatments } from "@/components/Treatments";
+import { Pricing } from "./_components/Pricing";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Offer />
       <Services />
       <Treatments />
+      <Pricing />
     </>
   );
 }

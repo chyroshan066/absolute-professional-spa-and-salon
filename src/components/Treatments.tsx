@@ -1,6 +1,7 @@
 import { THERAPIES, TREATMENTS } from "@/constants";
 import { Treatment } from "@/types";
 import { memo } from "react";
+import { TitleHeader } from "./utility/TitleHeader";
 
 const TreatmentCard = memo(({
     treatment
@@ -28,12 +29,13 @@ TreatmentCard.displayName = "TreatmentCard";
 export const Treatments = memo(() => (
     <section className="ftco-section">
         <div className="container-fluid px-md-5">
-            <div className="row justify-content-center mb-5 pb-3">
-                <div className="col-md-12 heading-section ftco-animate text-center">
-                    <h3 className="subheading">Services</h3>
-                    <h2 className="mb-1">Treatments</h2>
-                </div>
-            </div>
+
+            <TitleHeader
+                subHeader="Services"
+                header="Treatments"
+                className="col-md-12"
+            />
+
             <div className="row align-items-center">
 
                 <div className="col-lg-4">

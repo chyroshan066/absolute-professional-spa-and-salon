@@ -54,7 +54,7 @@ interface Index {
     index: string;
 }
 
-interface Header {
+export interface Header {
     header: string;
 }
 
