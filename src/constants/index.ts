@@ -5,3 +5,4 @@ export * from "./services";
 export * from "./treatments";
 export * from "./therapies";
 export * from "./pricing";
+export * from "./gallery";

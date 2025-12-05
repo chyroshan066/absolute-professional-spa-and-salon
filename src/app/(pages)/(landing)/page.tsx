@@ -6,6 +6,7 @@ import { Treatments } from "@/components/Treatments";
 import { Pricing } from "./_components/Pricing";
 import { Testimonials } from "@/components/Testimonials";
 import { Indicator } from "@/components/Indicator";
+import { Gallery } from "@/components/Gallery";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <Indicator />
+      <Gallery />
     </>
   );
 }

@@ -9,7 +9,10 @@ export const TitleHeader = memo(({
     className, subHeader, header
 }: TitleHeaderProps) => (
     <div className="row justify-content-center mb-5 pb-3">
-        <div className={`heading-section ftco-animate text-center ${className}`}>
+        <div
+            className={`heading-section text-center ${className}`}
+            data-aos="fade-up"
+        >
             <h3 className="subheading">{subHeader}</h3>
             <h2 className="mb-1">{header}</h2>
         </div>
