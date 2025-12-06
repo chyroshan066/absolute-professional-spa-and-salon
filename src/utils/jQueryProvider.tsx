@@ -7,15 +7,6 @@ interface JQueryProviderProps {
     onJQueryReady?: () => void;
 }
 
-declare global {
-    interface Window {
-        $: any;
-        jQuery: any;
-        jQueryLoadPromise?: Promise<void>;
-        jQueryLoadResolve?: () => void;
-    }
-}
-
 // Initialize the promise only in browser environment
 const initJQueryPromise = () => {
     if (typeof window !== 'undefined' && !window.jQueryLoadPromise)
@@ -23,14 +14,14 @@ const initJQueryPromise = () => {
 };
 
 export default function JQueryProvider({ children, onJQueryReady }: JQueryProviderProps) {
-    const [jQueryReady, setJQueryReady] = useState(false);
+    // const [jQueryReady, setJQueryReady] = useState(false);
 
     useEffect(() => {
         initJQueryPromise();
 
         // Check if jQuery is already loaded
         if (typeof window !== 'undefined' && window.$ !== undefined && window.jQuery !== undefined) {
-            setJQueryReady(true);
+            // setJQueryReady(true);
 
             if (window.jQueryLoadResolve) window.jQueryLoadResolve()
 
@@ -42,11 +33,11 @@ export default function JQueryProvider({ children, onJQueryReady }: JQueryProvid
         import('jquery')
             .then((jQuery) => {
                 // Type assertion to handle the jQuery import
-                const jqueryInstance = jQuery.default || jQuery;
+                // const jqueryInstance = jQuery.default || jQuery;
 
                 window.$ = window.jQuery = jQuery.default;
 
-                setJQueryReady(true);
+                // setJQueryReady(true);
 
                 // Notify all waiting components
                 if (window.jQueryLoadResolve) window.jQueryLoadResolve()

@@ -17,6 +17,7 @@ import { open_sans, prata } from "./fonts";
 import ScriptsAndProviders from "@/utils/ScriptsAndProviders";
 import { NavBar } from "@/components/NavBar";
 import { Footer } from "@/components/Footer";
+import { Loader } from "@/components/Loader";
 
 export const metadata: Metadata = {
   title: "<website_title>",
@@ -132,6 +133,7 @@ export default function RootLayout({
           <NavBar />
           {children}
           <Footer />
+          <Loader />
 
         </ScriptsAndProviders>
 

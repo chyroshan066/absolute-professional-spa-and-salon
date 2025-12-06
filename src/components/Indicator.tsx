@@ -51,7 +51,7 @@ export const Indicator = memo(() => {
                             const num = $this.data('number') as string;
 
                             // Use the animateNumber plugin
-                            ($.fn.animateNumber as any).call($this, {
+                            $.fn.animateNumber?.call($this, {
                                 number: parseInt(num),
                                 numberStep: function (now: number) {
                                     const floored_number = Math.floor(now);
