@@ -2,13 +2,14 @@ import { ClassName, Header } from "@/types";
 import { memo } from "react";
 
 interface TitleHeaderProps extends ClassName, Header {
-    subHeader: string
+    subHeader: string;
+    outerDivClassName?: string;
 }
 
 export const TitleHeader = memo(({
-    className, subHeader, header
+    className, subHeader, header, outerDivClassName
 }: TitleHeaderProps) => (
-    <div className="row justify-content-center mb-5 pb-3">
+    <div className={`row justify-content-center mb-5 ${outerDivClassName}`}>
         <div
             className={`heading-section text-center ${className}`}
             data-aos="fade-up"

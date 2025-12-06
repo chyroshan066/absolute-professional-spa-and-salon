@@ -33,7 +33,7 @@ export const NavBar = memo(() => {
     return (
         <nav
             ref={navbarRef}
-            className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+            className={`navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light ${pathname !== '/' && ' ftco-navbar-light-2'}`}
             id="ftco-navbar"
         >
             <div className="container">

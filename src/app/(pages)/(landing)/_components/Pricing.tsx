@@ -11,6 +11,7 @@ export const Pricing = memo(() => (
                 subHeader="Pricing Tables"
                 header="Pricing Treatments"
                 className="col-md-7"
+                outerDivClassName="pb-3"
             />
 
             <div className="row">

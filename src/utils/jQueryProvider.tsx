@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, ReactNode, useState } from 'react';
+import { useEffect, ReactNode } from 'react';
 
 interface JQueryProviderProps {
     children: ReactNode;

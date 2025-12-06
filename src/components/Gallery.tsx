@@ -66,6 +66,7 @@ export const Gallery = memo(() => {
                     subHeader="Gallery"
                     header="See the latest photos"
                     className="col-md-7"
+                    outerDivClassName="pb-3"
                 />
 
                 <div className="row">

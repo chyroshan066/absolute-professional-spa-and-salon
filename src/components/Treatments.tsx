@@ -34,6 +34,7 @@ export const Treatments = memo(() => (
                 subHeader="Services"
                 header="Treatments"
                 className="col-md-12"
+                outerDivClassName="pb-3"
             />
 
             <div className="row align-items-center">

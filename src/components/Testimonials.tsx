@@ -41,6 +41,7 @@ export const Testimonials = memo(() => {
                     subHeader="Testimony"
                     header="Successful Stories"
                     className="col-md-10"
+                    outerDivClassName="pb-3"
                 />
 
                 <div

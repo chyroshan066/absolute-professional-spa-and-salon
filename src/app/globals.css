@@ -11710,7 +11710,7 @@ textarea.form-control {
   } 
 }
 
-.js-fullheight {
+.hero-wrap.js-fullheight {
   min-height: 100vh !important;
   display: flex; 
   align-items: center;

@@ -84,3 +84,8 @@ export interface Therapy extends Index, Header {
 export interface Pricing extends Duration, Price {
     features: string[];
 } 
+
+export interface Team extends ImgSrc, Name, Text {
+    position: string;
+    social: SocialLink[];
+}
