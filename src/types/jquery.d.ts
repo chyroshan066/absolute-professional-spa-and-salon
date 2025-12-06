@@ -9,4 +9,19 @@ declare global {
   }
 }
 
+interface JQuery {
+  animateNumber(options: {
+    number: number | string;
+    numberStep?: (now: number, tween: any) => void;
+  }, duration?: number): JQuery;
+}
+
+interface JQueryStatic {
+  animateNumber?: {
+    numberStepFactories?: {
+      separator?: (separator: string) => (now: number, tween: any) => void;
+    };
+  };
+}
+
 export {};

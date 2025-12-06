@@ -1,15 +1,15 @@
 'use client';
 
 export const initGalleryLightbox = () => {
-  if (typeof window === 'undefined') return;
+  if (typeof window === 'undefined') return false;
   
-  const $ = (window as any).$;
+  const $ = window.$;
+
   if (!$ || !$.fn || !$.fn.magnificPopup) {
     console.log('Magnific Popup not ready');
     return false;
   }
 
-  // EXACT same code from original main.js
   $('.image-popup').magnificPopup({
     type: 'image',
     closeOnContentClick: true,

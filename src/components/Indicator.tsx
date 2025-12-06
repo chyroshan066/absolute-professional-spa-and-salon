@@ -30,55 +30,48 @@ export const Indicator = memo(() => {
     const hasAnimated = useRef(false);
 
     useEffect(() => {
-        // 1. Define the observer callback
         const handleIntersection = (
             entries: IntersectionObserverEntry[],
             observer: IntersectionObserver
         ) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting && !hasAnimated.current) {
+                    // Use type assertion for jQuery
+                    const $ = window.$ as JQueryStatic & {
+                        fn: {
+                            animateNumber?: (options: unknown, duration?: number) => JQuery;
+                        };
+                    };
 
-                    // 2. Safe access to jQuery
-                    const $ = (window as any).$;
+                    if ($ && $.fn && $.fn.animateNumber) {
+                        hasAnimated.current = true;
 
-                    // Check if jQuery and animateNumber are loaded
-                    if ($ && $.fn.animateNumber) {
-                        hasAnimated.current = true; // Mark as done so it doesn't re-run
-
-                        // 3. Find all number elements and animate them
                         $('.ftco-counter .number').each(function (this: HTMLElement) {
                             const $this = $(this);
-                            const num = $this.data('number');
+                            const num = $this.data('number') as string;
 
-                            $this.animateNumber(
-                                {
-                                    number: num,
-                                    numberStep: function (now: number, tween: any) {
-                                        const floored_number = Math.floor(now);
-                                        const target = $(tween.elem);
-                                        target.text(floored_number);
-                                    },
+                            // Use the animateNumber plugin
+                            ($.fn.animateNumber as any).call($this, {
+                                number: parseInt(num),
+                                numberStep: function (now: number) {
+                                    const floored_number = Math.floor(now);
+                                    $this.text(floored_number.toString());
                                 },
-                                2500 // Duration in milliseconds
-                            );
+                            }, 2500);
                         });
 
-                        // Stop observing once triggered
                         observer.disconnect();
                     }
                 }
             });
         };
 
-        // 4. Create the observer
         const observer = new IntersectionObserver(handleIntersection, {
-            root: null, // viewport
-            threshold: 0.5, // Trigger when 50% of the section is visible
+            root: null,
+            threshold: 0.5,
         });
 
-        // 5. Target the section
         const section = document.getElementById("section-counter");
-
         if (section) observer.observe(section);
 
         return () => observer.disconnect();
@@ -96,7 +89,6 @@ export const Indicator = memo(() => {
                 <div className="row justify-content-center">
                     <div className="col-md-10">
                         <div className="row">
-
                             {INDICATOR_DATA.map((data, index) => (
                                 <div
                                     key={index}
@@ -116,13 +108,12 @@ export const Indicator = memo(() => {
                                     </div>
                                 </div>
                             ))}
-
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 });
 
 Indicator.displayName = "Indicator";

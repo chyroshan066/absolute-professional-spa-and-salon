@@ -7,7 +7,7 @@ import { GALLERIES } from "@/constants";
 export const Gallery = memo(() => {
     useEffect(() => {
         const initLightbox = () => {
-            const $ = (window as any).$;
+            const $ = window.$;
 
             if (!$ || !$.fn || !$.fn.magnificPopup) {
                 setTimeout(initLightbox, 100);
@@ -32,7 +32,7 @@ export const Gallery = memo(() => {
                     preload: [0, 1]
                 },
                 image: {
-                    titleSrc: function (item: any) {
+                    titleSrc: function () {
                         return '';
                     },
                     verticalFit: true
@@ -51,7 +51,7 @@ export const Gallery = memo(() => {
         setTimeout(initLightbox, 1000);
 
         return () => {
-            const $ = (window as any).$;
+            const $ = window.$;
             if ($ && $.magnificPopup && $.magnificPopup.instance) {
                 $.magnificPopup.instance.close();
             }

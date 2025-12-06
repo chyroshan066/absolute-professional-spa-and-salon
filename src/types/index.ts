@@ -71,6 +71,7 @@ export interface Offer extends ImgSrc, Title, Text {}
 export interface Service extends Icon, Title, Text {}
 export interface Treatment extends Service, ClassName {}
 export interface Testimonial extends Name, Text, ImgSrc {}
+export interface SocialLink extends Icon, Href {}
 
 export interface Therapy extends Index, Header {
     section: {

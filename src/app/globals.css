@@ -11778,3 +11778,14 @@ textarea.form-control {
   margin-left: 10px;
   font-size: 11px;
 }
+.ftco-footer .block-23 ul li a,
+.ftco-footer .block-23 ul li a .text {
+  color: var(--gray) !important; /* Matches standard footer text color */
+  text-decoration: none;
+}
+.ftco-footer .block-23 ul li .icon {
+  color: var(--gray);
+}
+.ftco-footer .block-23 ul li {
+  margin-bottom: 0; 
+}

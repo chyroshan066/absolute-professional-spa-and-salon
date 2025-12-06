@@ -7,13 +7,19 @@ interface JQueryProviderProps {
     onJQueryReady?: () => void;
 }
 
+declare global {
+    interface Window {
+        $: any;
+        jQuery: any;
+        jQueryLoadPromise?: Promise<void>;
+        jQueryLoadResolve?: () => void;
+    }
+}
+
 // Initialize the promise only in browser environment
 const initJQueryPromise = () => {
-    if (typeof window !== 'undefined' && !window.jQueryLoadPromise) {
-        window.jQueryLoadPromise = new Promise((resolve) => {
-            window.jQueryLoadResolve = resolve;
-        });
-    }
+    if (typeof window !== 'undefined' && !window.jQueryLoadPromise)
+        window.jQueryLoadPromise = new Promise((resolve) => window.jQueryLoadResolve = resolve);
 };
 
 export default function JQueryProvider({ children, onJQueryReady }: JQueryProviderProps) {
@@ -26,32 +32,27 @@ export default function JQueryProvider({ children, onJQueryReady }: JQueryProvid
         if (typeof window !== 'undefined' && window.$ !== undefined && window.jQuery !== undefined) {
             setJQueryReady(true);
 
-            if (window.jQueryLoadResolve) {
-                window.jQueryLoadResolve();
-            }
+            if (window.jQueryLoadResolve) window.jQueryLoadResolve()
 
-            if (onJQueryReady) {
-                onJQueryReady();
-            }
+            if (onJQueryReady) onJQueryReady()
 
             return;
         }
 
         import('jquery')
             .then((jQuery) => {
+                // Type assertion to handle the jQuery import
+                const jqueryInstance = jQuery.default || jQuery;
+
                 window.$ = window.jQuery = jQuery.default;
 
                 setJQueryReady(true);
 
                 // Notify all waiting components
-                if (window.jQueryLoadResolve) {
-                    window.jQueryLoadResolve();
-                }
+                if (window.jQueryLoadResolve) window.jQueryLoadResolve()
 
                 // Notify parent component
-                if (onJQueryReady) {
-                    onJQueryReady();
-                }
+                if (onJQueryReady) onJQueryReady()
 
                 // Dispatch custom event for components that prefer event listeners
                 window.dispatchEvent(new CustomEvent('jQueryLoaded'));

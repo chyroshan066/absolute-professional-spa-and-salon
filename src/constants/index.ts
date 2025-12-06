@@ -6,3 +6,5 @@ export * from "./treatments";
 export * from "./therapies";
 export * from "./pricing";
 export * from "./gallery";
+export * from "./social-links";
+export * from "./contact-links";
