@@ -18,18 +18,43 @@ import ScriptsAndProviders from "@/utils/ScriptsAndProviders";
 import { NavBar } from "@/components/NavBar";
 import { Footer } from "@/components/Footer";
 import { Loader } from "@/components/Loader";
+import { baseURL } from "@/constants";
 
 export const metadata: Metadata = {
-  title: "<website_title>",
-  description: "<website_description>",
+  title: "Best Spa in Jhapa | Absolute Professional Spa & Salon - Birtamode, Dhulabari, Panitanki",
+  description: "Best spa in Jhapa, Nepal offering Warrior Thai, Sports Massage, Hot Stone, Pain Potli & Aromatherapy. Visit our spa in Birtamode, spa in Dhulabari or spa in Panitanki for premium wellness treatments.",
   keywords: [
-    "<search_keyword1>",
-    "<search_keyword2>",
-    // ..... and so on
+    "spa in Jhapa",
+    "best spa in Jhapa",
+    "spa in Birtamode",
+    "best spa in Birtamode",
+    "spa in Dhulabari",
+    "best spa in Dhulabari",
+    "spa in Panitanki",
+    "best spa in Panitanki",
+    "spa near me Jhapa",
+    "massage center in Birtamode",
+    "massage center in Dhulabari",
+    "spa and salon Jhapa",
+    "professional spa Birtamode",
+    "top spa in Dhulabari",
+    "spa services Panitanki",
+    "Thai massage in Jhapa",
+    "hot stone massage Birtamode",
+    "sports massage Dhulabari",
+    "pain relief spa Jhapa",
+    "aromatherapy Birtamode",
+    "Swedish massage Panitanki",
+    "Absolute Professional Spa",
+    "Warrior Thai massage",
+    "pain potli treatment",
+    "stress relief spa",
+    "therapeutic massage Nepal",
+    "wellness center Jhapa",
   ],
-  authors: [{ name: "<website_name>" }],
-  creator: "<website_name>",
-  publisher: "<website_name>",
+  authors: [{ name: "Absolute Professional Spa & Salon" }],
+  creator: "Absolute Professional Spa & Salon",
+  publisher: "Absolute Professional Spa & Salon",
   metadataBase: new URL("https://www.absoluteprofessionalspa.com.np"),
   alternates: {
     canonical: "/",
@@ -79,25 +104,25 @@ export const metadata: Metadata = {
   },
   manifest: '/favicon_io/site.webmanifest',
   openGraph: {
-    title: "<website_title>",
-    description: "<website_description>",
+    title: "Best Spa in Jhapa | Absolute Professional Spa - Birtamode, Dhulabari, Panitanki",
+    description: "Visit the best spa in Jhapa! Absolute Professional Spa & Salon offers premium massage and wellness services. Find us in Birtamode, Dhulabari, and Panitanki.",
     type: "website",
     locale: "en_US",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
-    siteName: "<website_name>",
+    url: `${baseURL}`,
+    siteName: "Absolute Professional Spa & Salon",
     images: [
       {
         url: "/images/preview.webp",
         width: 1200,
         height: 630,
-        alt: "<website_name> Preview",
+        alt: "Best Spa in Jhapa - Absolute Professional Spa & Salon",
       }
     ],
   },
-  category: "<website_category>",
-  classification: "<website_classification>",
+  category: "Health & Wellness",
+  classification: "Spa and Massage Therapy Services",
   referrer: "origin-when-cross-origin",
-  applicationName: "<website_name>",
+  applicationName: "Absolute Professional Spa & Salon",
   generator: "Next.js",
 };
 
