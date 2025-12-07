@@ -18,7 +18,7 @@ import ScriptsAndProviders from "@/utils/ScriptsAndProviders";
 import { NavBar } from "@/components/NavBar";
 import { Footer } from "@/components/Footer";
 import { Loader } from "@/components/Loader";
-import { baseURL } from "@/constants";
+import { baseURL, spaBusinessStructuredData, spaServicesStructuredData, spaTreatmentsStructuredData } from "@/constants";
 
 export const metadata: Metadata = {
   title: "Best Spa in Jhapa | Absolute Professional Spa & Salon - Birtamode, Dhulabari, Panitanki",
@@ -144,7 +144,19 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify("structured_data_from_constants"),
+            __html: JSON.stringify(spaBusinessStructuredData),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(spaServicesStructuredData),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(spaTreatmentsStructuredData),
           }}
         />
       </head>
