@@ -14,20 +14,19 @@ export const Hero = memo(() => (
                     <div className="icon">
                         <span className="flaticon-lotus" />
                     </div>
-                    <h1>Spa &amp; Beauty Center</h1>
+                    <h1>Absolute Professional Spa &amp; Center</h1>
                     <div className="row justify-content-center">
                         <div className="col-md-7 mb-3">
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <p>Unwind, restore, and rediscover your inner balance. Experience authentic wellness through ancient healing traditions.</p>
                         </div>
                     </div>
                     <p>
                         <Link
-                            href="#"
+                            href="/contact"
                             className="btn btn-primary p-3 px-5 py-4 mr-md-2"
                         >
-                            Get in Touch
+                            Contact
                         </Link>
-                        <a href="#" className="btn btn-outline-primary p-3 px-5 py-4 ml-md-2">Contact</a>
                     </p>
                 </div>
             </div>

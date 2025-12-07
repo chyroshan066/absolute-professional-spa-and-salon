@@ -2,33 +2,28 @@ import { Pricing } from "@/types";
 
 export const PRICING: Pricing[] = [
     {
-        duration: "Year",
-        price: 449,
+        duration: "3",
+        price: 5000,
         features: [
-            "Face Treatments",
-            "Nail Treatments",
-            "Medical Treatments",
-            "Hair Removal",
+            "Warrior Thai",
+            "Sports Massage",
+            "D-Stress",
         ],
     },
     {
-        duration: "Month",
-        price: 200,
+        duration: "4",
+        price: 5000,
         features: [
-            "Face Treatments",
-            "Nail Treatments",
-            "Medical Treatments",
-            "Hair Removal",
+            "Aromatherapy",
+            "Swedish",
         ],
     },
     {
-        duration: "Week",
-        price: 85,
+        duration: "4.5",
+        price: 6000,
         features: [
-            "Face Treatments",
-            "Nail Treatments",
-            "Medical Treatments",
-            "Hair Removal",
+            "Hot Stone",
+            "Pain Potli",
         ],
     },
 ];

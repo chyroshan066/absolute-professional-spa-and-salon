@@ -2,15 +2,7 @@ import { SocialLink } from "@/types";
 
 export const SOCIAL_LINKS: SocialLink[] = [
     {
-        icon: "twitter",
-        href: "#",
-    },
-    {
         icon: "facebook",
-        href: "#",
-    },
-    {
-        icon: "instagram",
-        href: "#",
+        href: "https://www.facebook.com/p/The-Absolute-Professional-Spa-And-Salon-61553449262045/",
     },
 ];

@@ -9,7 +9,7 @@ export const Offer = memo(() => (
                 {OFFERS.map((offer, index) => (
                     <div
                         key={index}
-                        className="col-md-4 d-flex align-items-stretch"
+                        className="col-md-6 d-flex align-items-stretch"
                     >
                         <div className={`offer-deal text-center px-2 px-lg-5 ${index === 1 && 'active'}`}>
                             <div
@@ -21,7 +21,7 @@ export const Offer = memo(() => (
                                 <p className="mb-5">{offer.text}</p>
                                 <p>
                                     <Link
-                                        href="#"
+                                        href="/contact"
                                         className="btn btn-white px-4 py-3"
                                     >
                                         Book A Treatment <span className="ion-ios-arrow-round-forward" />

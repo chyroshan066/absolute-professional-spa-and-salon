@@ -13,16 +13,12 @@ const INDICATOR_DATA: Indicator[] = [
         text: "Happy Customers",
     },
     {
-        number: "60",
+        number: "7",
         text: "Treatments",
     },
     {
         number: "50",
         text: "Years of Experience",
-    },
-    {
-        number: "100",
-        text: "Lesson Conducted",
     },
 ];
 
@@ -92,7 +88,7 @@ export const Indicator = memo(() => {
                             {INDICATOR_DATA.map((data, index) => (
                                 <div
                                     key={index}
-                                    className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap"
+                                    className="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap"
                                     data-aos="fade-up"
                                 >
                                     <div className="block-18 text-center">

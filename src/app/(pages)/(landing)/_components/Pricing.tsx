@@ -23,19 +23,19 @@ export const Pricing = memo(() => (
                     >
                         <div className="block-7">
                             <div className="text-center">
-                                <h2 className="heading">{card.duration}ly Card</h2>
+                                <h2 className="heading">Pay</h2>
                                 <span className="price">
-                                    <sup>$</sup> <span className="number">{card.price}</span>
+                                    <sup>Rs.</sup> <span className="number">{card.price}</span>
                                 </span>
-                                <span className="excerpt d-block">For 1 {card.duration}</span>
-                                <h3 className="heading-2 my-4">Enjoy All The Features</h3>
+                                <span className="excerpt d-block">For {card.duration} hrs</span>
+                                <h3 className="heading-2 my-4">Enjoy All Massages</h3>
                                 <ul className="pricing-text mb-5">
                                     {card.features.map((list, featureIndex) => (
                                         <li key={featureIndex}>{list}</li>
                                     ))}
                                 </ul>
                                 <Link
-                                    href="#"
+                                    href="/contact"
                                     className="btn btn-primary d-block px-2 py-4"
                                 >
                                     Get Started

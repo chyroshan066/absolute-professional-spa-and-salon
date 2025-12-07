@@ -2,28 +2,23 @@ import { Testimonial } from "@/types";
 
 export const TESTIMONIALS: Testimonial[] = [
     {
-        name: "Gabby Smith",
-        text: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        imgSrc: "/images/testimonials/person_1.jpg",
+        name: "Ramesh Rai",
+        text: "It was really amazing to visit here,and great experience to get therapy from the highly professional therapist.",
+        imgSrc: "/images/testimonials/person_1.webp",
     },
     {
-        name: "Floyd Weather",
-        text: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        imgSrc: "/images/testimonials/person_2.jpg",
+        name: "Shivam Bc",
+        text: "Good Thai spa very nice",
+        imgSrc: "/images/testimonials/person_2.webp",
     },
     {
-        name: "James Dee",
-        text: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        imgSrc: "/images/testimonials/person_3.jpg",
+        name: "Tara Kharel",
+        text: "best therapy center in Nepal",
+        imgSrc: "/images/testimonials/person_3.webp",
     },
     {
-        name: "Lance Roger",
-        text: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        imgSrc: "/images/testimonials/person_4.jpg",
-    },
-    {
-        name: "Kenny Bufer",
-        text: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        imgSrc: "/images/testimonials/person_2.jpg",
+        name: "johny soibam",
+        text: "Service was awesome",
+        imgSrc: "/images/testimonials/person_4.webp",
     },
 ];

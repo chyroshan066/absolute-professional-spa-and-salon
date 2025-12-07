@@ -26,7 +26,7 @@ export const Intro = memo(() => (
                     <p
                         data-aos="fade-up"
                         data-aos-delay="50"
-                    >Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    >Indulge in the healing art of massage and spa therapy. Our treatments relieve chronic pain, reduce stress, improve flexibility, and promote deep relaxation—helping you achieve optimal wellness from the inside out.</p>
 
                     <ul className="mt-5 do-list">
                         {INTROTEXT.map((message, index) => (

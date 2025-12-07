@@ -24,15 +24,18 @@ export const Footer = memo(() => (
         <div className="container">
             <div className="row d-flex">
 
-                <ColumnWrapper title="Energen">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <ColumnWrapper title="Absolute Professional Spa & Salon">
+                    <p>Experience authentic wellness and rejuvenation at Absolute Professional Spa & Salon. Offering seven specialized treatments including Warrior Thai, Sports Therapy, Pain Potli, and Hot Stone Therapy across our three convenient locations in Nepal and India.</p>
                     <ul className="ftco-footer-social list-unstyled float-lft mt-3">
                         {SOCIAL_LINKS.map((link, index) => (
                             <li
                                 key={index}
                                 data-aos="fade-up"
                             >
-                                <a href={link.href}>
+                                <a
+                                    href={link.href}
+                                    target="_blank"
+                                >
                                     <span className={`icon-${link.icon}`} />
                                 </a>
                             </li>
@@ -55,7 +58,10 @@ export const Footer = memo(() => (
                         <ul>
                             {CONTACTS.map((link, index) => (
                                 <li key={index}>
-                                    <a href={link.href}>
+                                    <a
+                                        href={link.href}
+                                        target="_blank"
+                                    >
                                         <span className={`icon icon-${link.icon}`} />
                                         <span className="text">{link.text}</span>
                                     </a>
@@ -70,7 +76,7 @@ export const Footer = memo(() => (
                 <div className="col-md-12 text-center">
 
                     <p className="mb-0">
-                        Copyright &copy;{new Date().getFullYear()} All rights reserved | This template is made with <i className="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        Copyright &copy;{new Date().getFullYear()} All rights reserved | Designed with <i className="icon-heart" aria-hidden="true"></i> by <a href="https://github.com/chyroshan066" target="_blank">Roshan</a>
                     </p>
                 </div>
             </div>

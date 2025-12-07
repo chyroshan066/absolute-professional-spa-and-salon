@@ -4096,6 +4096,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between; 
 }
+
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
@@ -4105,6 +4106,12 @@ input[type="button"].btn-block {
   line-height: inherit;
   white-space: nowrap; 
 }
+@media (max-width: 575px) {
+  .navbar-brand {
+    font-size: 16px !important;
+  }
+}
+
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none; 
 }
@@ -4144,7 +4151,7 @@ input[type="button"].btn-block {
   align-items: center; 
 }
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 0.75rem 0.25rem 0;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
@@ -10516,13 +10523,13 @@ h5,
   color: #000; 
 }
 .card-body ul li span:first-child {
-  width: 60%; 
+  width: 45%; 
 }
 .card-body ul li span:nth-child(2) {
-  width: 30%; 
+  width: 25%; 
 }
 .card-body ul li span:last-child {
-  width: 10%; 
+  width: 30%; 
 }
 .btn-custom {
   color: #fff;
@@ -11143,6 +11150,15 @@ textarea.form-control {
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease; 
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.block-7 .text-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .block-7 .heading {
   font-size: 14px;
@@ -11181,6 +11197,9 @@ textarea.form-control {
 }
 .block-7 .label2 {
   text-transform: uppercase; 
+}
+.block-7 .pricing-text {
+  flex-grow: 1; 
 }
 .block-7 .pricing-text, 
 .block-7 .pricing-text li {
@@ -11739,6 +11758,29 @@ textarea.form-control {
   }
 }
 
+.navbar.sticky-top .navbar-brand {
+  color: black !important;
+}
+.navbar.sticky-top .brand-text-top {
+  color: black !important;
+}
+.navbar.sticky-top .brand-text-bottom {
+  color: black !important; 
+}
+.navbar.sticky-top .navbar-toggler {
+  color: black !important;
+  border-color: rgba(0, 0, 0, 0.1) !important; 
+}
+.navbar.sticky-top .navbar-toggler .oi {
+  color: black !important;
+}
+.navbar.sticky-top .nav-link {
+  color: black !important;
+}
+.navbar.sticky-top .nav-item.active .nav-link {
+  color: #d9bf77 !important; /* Or your primary brand color */
+}
+
 @keyframes slide-up-fade-in {
   0% {
     opacity: 0;
@@ -11788,4 +11830,12 @@ textarea.form-control {
 }
 .ftco-footer .block-23 ul li {
   margin-bottom: 0; 
+}
+
+@media (max-width: 575px) {
+  .hero-wrap .slider-text h1 {
+    font-size: 24 !important;
+    letter-spacing: 9px !important; 
+    line-height: 1.3;
+  }
 }

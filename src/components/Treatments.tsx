@@ -101,7 +101,7 @@ export const Treatments = memo(() => (
                                                 >
                                                     <span>{list.title}</span>
                                                     <span>{list.duration} min.</span>
-                                                    <span>${list.price}</span>
+                                                    <span>{therapy.index !== "Three" ? 'NPR.' : 'INR.'}{list.price}</span>
                                                 </li>
                                             ))}
                                         </ul>

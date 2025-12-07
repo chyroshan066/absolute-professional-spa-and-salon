@@ -41,7 +41,7 @@ export const NavBar = memo(() => {
                     className="navbar-brand"
                     href="/"
                 >
-                    <span className="flaticon-lotus" />Energen
+                    <span className="flaticon-lotus" />Absolute Professional
                 </Link>
 
                 <button
@@ -53,7 +53,7 @@ export const NavBar = memo(() => {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <span className="oi oi-menu" /> Menu
+                    <span className="oi oi-menu" />
                 </button>
 
                 <div
