@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   authors: [{ name: "<website_name>" }],
   creator: "<website_name>",
   publisher: "<website_name>",
-  metadataBase: new URL("https://absoluteprofessionalspa.com.np"),
+  metadataBase: new URL("https://www.absoluteprofessionalspa.com.np"),
   alternates: {
     canonical: "/",
   },

@@ -13,7 +13,7 @@ export const SubmitButton = memo(({
 }: SubmitButtonProps) => (
     <button
         type="submit"
-        className={`${className}`}
+        className="btn btn-primary py-3 px-5"
         disabled={isButtonDisabled}
     >
         {btnText}

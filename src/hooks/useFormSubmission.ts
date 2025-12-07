@@ -1,3 +1,5 @@
+"use client";
+
 import { useCallback, useMemo } from "react";
 import { useForm, FieldValues, DefaultValues } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
