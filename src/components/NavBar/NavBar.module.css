@@ -1,0 +1,198 @@
+.navLink {
+  display: block;
+  font-size: 12px;
+  padding: 1.5rem 0.5rem;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 1 !important; 
+}
+.navLink:hover, 
+.navLink:focus {
+  text-decoration: none; 
+} 
+.navLink:focus {
+  color: #d9bf77 !important; 
+}
+.navLink.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default; 
+}
+.ftcoNavbarLight {
+  background: transparent !important;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 0; 
+}
+.ftcoNavbarLight.scrolled {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin-top: -130px;
+  background: #fff !important;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); 
+}
+.ftcoNavbarLight.scrolled .navItem.active > a {
+  color: #d9bf77 !important; 
+}
+.ftcoNavbarLight.scrolled .navLink {
+  padding-top: 0.9rem !important;
+  padding-bottom: 0.9rem !important;
+  color: #000 !important; 
+}
+.ftcoNavbarLight.scrolled .navLink.active {
+  color: #d9bf77 !important; 
+}
+.ftcoNavbarLight.scrolled .navLink:hover {
+  color: #d9bf77 !important; 
+}
+.navbarBrand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  line-height: inherit;
+  white-space: nowrap; 
+  color: #d9bf77;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px; 
+  font-size: 22px;
+}
+.navbarBrand:hover, 
+.navbarBrand:focus {
+  text-decoration: none; 
+  color: #000; 
+}
+.navbarBrand span {
+  color: #d9bf77;
+  font-size: 28px; 
+} 
+.ftcoNavbarLight.scrolled .navbarBrand {
+  color: #000; 
+}
+.navbarNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; 
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row; 
+}
+.navbarToggler {
+  padding: 0.25rem 0 0.25rem 0;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem; 
+  border-color: rgba(255, 255, 255, 0.1); 
+  color: rgba(255, 255, 255, 0.5) !important;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: .1em; 
+}
+.navbarToggler:hover, 
+.navbarToggler:focus {
+  text-decoration: none; 
+}
+.navbarToggler:focus {
+  outline: none !important; 
+}
+.ftcoNavbarLight.scrolled .navbarToggler {
+  border: none;
+  color: rgba(0, 0, 0, 0.5) !important;
+  border-color: rgba(0, 0, 0, 0.5) !important;
+  cursor: pointer;
+  padding-right: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: .1em; 
+}
+.mlAuto
+ {
+  margin-left: auto !important; 
+}
+
+@media (max-width: 575px) {
+  .navbarBrand {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .ftcoNavbarLight.scrolled .navbarNav {
+    background: none;
+    padding-left: 0 !important;
+    padding-right: 0 !important; 
+  } 
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    padding-right: 0;
+    padding-left: 0; 
+  }
+  .ftcoNavbarLight {
+    background: #000 !important;
+    position: relative;
+    top: 0;
+    padding: 10px 15px; 
+  }  
+  .navLink {
+    padding: .9rem 0;
+    color: rgba(255, 255, 255, 0.7); 
+  }
+  .navLink:hover {
+    color: #fff; 
+  } 
+  .navbarBrand {
+    color: #d9bf77; 
+  } 
+  .navbarNav {
+    padding-bottom: 10px;
+    -ms-flex-direction: column;
+    flex-direction: column;  
+  } 
+  .ftcoNavbarLight.scrolled .navbarNav {
+    background: none;
+    border-radius: 0px;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important; 
+  } 
+}
+
+@media (min-width: 992px) {
+  .navbarExpandLg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; 
+  }
+  .container {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }  
+  .navbarToggler {
+    display: none; 
+  } 
+}
+
+@media print {
+  .navbar {
+    display: none; 
+  }
+}

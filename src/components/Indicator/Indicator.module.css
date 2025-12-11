@@ -1,0 +1,12 @@
+.text strong {
+  font-size: 30px; 
+}
+.text span {
+  display: block; 
+}
+
+@media (max-width: 991.98px) {
+  .counterWrap {
+    margin-bottom: 40px !important; 
+  } 
+}

@@ -1,0 +1,51 @@
+.bgWhite {
+  background-color: #fff !important; 
+}
+.coach {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px; 
+}
+.img, 
+.text {
+  width: 100%; 
+}
+.img {
+  height: 380px;
+  background-position: top center !important; 
+}
+.subheading {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500; 
+}
+.text h3 {
+  font-size: 22px;
+  color: #000; 
+}
+.text h3 a {
+  color: #000; 
+}
+.ftcoSocialMedia {
+  padding: 0; 
+}
+.ftcoSocialMedia li {
+  list-style: none; 
+}
+.ftcoSocialMedia li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #d9bf77;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; 
+}
+.ftcoSocialMedia li a span {
+  font-size: 24px;
+  color: #fff; 
+}

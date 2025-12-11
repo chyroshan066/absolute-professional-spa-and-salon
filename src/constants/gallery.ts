@@ -1,8 +1,6 @@
 export const GALLERIES: string[] = [
-    "images/gallery/gallery-1.jpg",
-    "images/gallery/gallery-2.jpg",
-    "images/gallery/gallery-3.jpg",
-    "images/gallery/gallery-4.jpg",
-    // "images/gallery/gallery-5.jpg",
-    // "images/gallery/gallery-6.jpg",
+    "images/gallery/g1.webp",
+    "images/gallery/g2.webp",
+    "images/gallery/g3.webp",
+    "images/gallery/g4.webp",
 ];

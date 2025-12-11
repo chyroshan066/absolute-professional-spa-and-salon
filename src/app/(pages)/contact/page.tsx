@@ -1,5 +1,5 @@
-import { ParallaxImage } from "@/components/ParallaxImage";
-import { Contact } from "./_components/Contact";
+import { ParallaxImage } from "@/components/ParallaxImage/ParallaxImage";
+import { Contact } from "./_components/Contact/Contact";
 import { Metadata } from "next";
 import { baseURL } from "@/constants";
 

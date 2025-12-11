@@ -1,0 +1,66 @@
+.px4 {
+  padding-right: 1.5rem !important; 
+  padding-left: 1.5rem !important; 
+}
+.ftcoNoPt {
+  padding-top: 0 !important; 
+}
+.ftcoNoPb {
+  padding-bottom: 0 !important; 
+}
+.btnWhite {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000;
+  -webkit-box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 0.26) !important;
+  -moz-box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 0.26) !important;
+  box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 0.26) !important; 
+}
+.btnWhite:hover {
+  border: 1px solid #d9bf77;
+  background: #d9bf77;
+  color: #fff; 
+}
+.btnWhite span {
+  color: #000; 
+}
+.btnWhite:hover span {
+  color: #fff; 
+}
+
+@media (min-width: 992px) {
+  .pxLg5 {
+    padding-right: 3rem !important; 
+    padding-left: 3rem !important; 
+  }
+}
+
+
+
+.offerDeal {
+  width: 100%;
+  padding-top: 5em;
+  padding-bottom: 5em; 
+}
+.offerDeal.active {
+  background: #faf7ef; 
+}
+.img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; 
+}
+  @media (max-width: 991.98px) {
+    .img {
+      width: 150px;
+      height: 150px; 
+    } 
+  }
+
+.text h3 {
+  font-size: 24px; 
+}

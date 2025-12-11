@@ -1,5 +1,5 @@
-import { ParallaxImage } from "@/components/ParallaxImage";
-import { Treatments } from "@/components/Treatments";
+import { ParallaxImage } from "@/components/ParallaxImage/ParallaxImage";
+import { Treatments } from "@/components/Treatments/Treatments";
 import { baseURL } from "@/constants";
 import { Metadata } from "next";
 

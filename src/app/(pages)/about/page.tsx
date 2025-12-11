@@ -1,10 +1,10 @@
-import { Gallery } from "@/components/Gallery";
-import { Indicator } from "@/components/Indicator";
-import { Intro } from "@/components/Intro";
-import { Offer } from "@/components/Offer";
-import { ParallaxImage } from "@/components/ParallaxImage";
-import { Services } from "@/components/Services";
-import { Testimonials } from "@/components/Testimonials";
+import { Gallery } from "@/components/Gallery/Gallery";
+import { Indicator } from "@/components/Indicator/Indicator";
+import { Intro } from "@/components/Intro/Intro";
+import { Offer } from "@/components/Offer/Offer";
+import { ParallaxImage } from "@/components/ParallaxImage/ParallaxImage";
+import { Services } from "@/components/Services/Services";
+import { Testimonials } from "@/components/Testimonials/Testimonials";
 import { baseURL } from "@/constants";
 import { Metadata } from "next";
 

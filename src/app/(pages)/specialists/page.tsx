@@ -1,5 +1,5 @@
-import { ParallaxImage } from "@/components/ParallaxImage";
-import { Team } from "./_components/Team";
+import { ParallaxImage } from "@/components/ParallaxImage/ParallaxImage";
+import { Team } from "./_components/Team/Team";
 import { baseURL } from "@/constants";
 import { Metadata } from "next";
 

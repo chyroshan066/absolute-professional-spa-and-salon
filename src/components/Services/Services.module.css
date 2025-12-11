@@ -1,0 +1,27 @@
+.services {
+  width: 100%;
+  display: block;
+  margin-bottom: 40px; 
+}
+.icon {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #d9bf77;
+  background: #d9bf77;
+  margin: 0 auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; 
+}
+.icon span {
+  font-size: 44px;
+  color: #fff; 
+}
+.text {
+  width: 100%; 
+}
+.text h3 {
+  font-size: 24px;
+  font-weight: 400; 
+}

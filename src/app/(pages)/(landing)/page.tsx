@@ -1,12 +1,12 @@
-import { Intro } from "@/components/Intro";
-import { Hero } from "./_components/Hero";
-import { Offer } from "@/components/Offer";
-import { Services } from "@/components/Services";
-import { Treatments } from "@/components/Treatments";
-import { Pricing } from "./_components/Pricing";
-import { Testimonials } from "@/components/Testimonials";
-import { Indicator } from "@/components/Indicator";
-import { Gallery } from "@/components/Gallery";
+import { Intro } from "@/components/Intro/Intro";
+import { Hero } from "./_components/Hero/Hero";
+import { Offer } from "@/components/Offer/Offer";
+import { Services } from "@/components/Services/Services";
+import { Treatments } from "@/components/Treatments/Treatments";
+import { Pricing } from "./_components/Pricing/Pricing";
+import { Indicator } from "@/components/Indicator/Indicator";
+import { Gallery } from "@/components/Gallery/Gallery";
+import { Testimonials } from "@/components/Testimonials/Testimonials";
 
 export default function Home() {
   return (

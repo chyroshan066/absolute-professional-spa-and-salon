@@ -1,0 +1,40 @@
+.justifyContentEnd {
+  -webkit-box-pack: end !important;
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important; 
+}
+.mr3 {
+  margin-right: 1rem !important; 
+}
+.mt5 {
+  margin-top: 3rem !important; 
+}
+.ftcoIntro {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; 
+}
+.ftcoIntro h2 {
+  color: #fff !important; 
+}
+.ftcoIntro p {
+  color: #fff !important; 
+}
+.ftcoIntroContent {
+  position: relative;
+  z-index: 2;
+}
+.doList {
+  margin: 0;
+  padding: 0; 
+}
+.doList li {
+  list-style: none;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 300; 
+}
+.doList li span {
+  color: #d9bf77;
+  font-size: 22px; 
+}

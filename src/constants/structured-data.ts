@@ -100,7 +100,7 @@ export const spaBusinessStructuredData: SpaBusinessStructuredData = {
   "@type": "BeautySalon",
   "name": "Absolute Professional Spa & Salon",
   "description": "Premium spa and massage therapy services in Jhapa, Nepal and India. Offering Warrior Thai, Sports Massage, Hot Stone Therapy, Pain Potli, Swedish, Aromatherapy & D-Stress treatments. Expert therapists, traditional healing methods, and professional wellness care across three locations in Birtamode, Dhulabari, and Panitanki.",
-  "url": `https://www.absoluteprofessionalspa.com.np`,
+  "url": "https://www.absoluteprofessionalspa.com.np",
   
   "address": [
     {
@@ -157,7 +157,7 @@ export const spaBusinessStructuredData: SpaBusinessStructuredData = {
     "@type": "ReserveAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": `https://www.absoluteprofessionalspa.com.np/contact`
+      "urlTemplate": "https://www.absoluteprofessionalspa.com.np/contact"
     },
     "result": {
       "@type": "Appointment",

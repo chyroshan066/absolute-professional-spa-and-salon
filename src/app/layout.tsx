@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import "@/styles/open-iconic-bootstrap.min.css";
 import "@/styles/animate.css";
 import "@/styles/owl.carousel.min.css";
@@ -15,8 +16,8 @@ import IonicScripts from "@/utils/IonicScripts";
 import AnalyticsWrapper from "@/utils/AnalyticsWrapper";
 import { open_sans, prata } from "./fonts";
 import ScriptsAndProviders from "@/utils/ScriptsAndProviders";
-import { NavBar } from "@/components/NavBar";
-import { Footer } from "@/components/Footer";
+import { NavBar } from "@/components/NavBar/NavBar";
+import { Footer } from "@/components/Footer/Footer";
 import { Loader } from "@/components/Loader";
 import { baseURL, spaBusinessStructuredData, spaServicesStructuredData, spaTreatmentsStructuredData } from "@/constants";
 
