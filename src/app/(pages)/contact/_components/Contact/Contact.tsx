@@ -2,13 +2,14 @@
 
 import { Alert } from "@/components/Alert/Alert";
 import { InputField } from "@/components/utility/InputField/InputField";
-import { SubmitButton } from "@/components/utility/SubmitButton";
+import { SubmitButton } from "@/components/utility/Button/SubmitButton";
 import { CONTACTS } from "@/constants";
 import { useFormSubmission } from "@/hooks/useFormSubmission";
 import { ContactFormData, ContactFormSchema } from "@/middlewares/schema";
 import { onSubmit } from "@/utils/contactData";
 import { memo, useMemo } from "react";
 import styles from "./Contact.module.css";
+import { Container } from "@/components/utility/Container";
 
 const initialValues: ContactFormData = {
     name: "",
@@ -80,89 +81,89 @@ export const Contact = memo(() => {
                 autoDismissDelay={6000}
             />
 
-            <section className={`ftco-section contact-section`}>
-                <div className="container">
-                    <div className="row block-9">
+            <Container className="contact-section">
 
-                        <div
-                            className="col-md-5 contact-info bg-light p-4"
-                            data-aos="fade-up"
-                        >
-                            <div className="row">
-                                <div className="col-md-12 mb-4">
-                                    <h2 className="h4">Contact Information</h2>
+                <div className="row block-9">
+
+                    <div
+                        className="col-md-5 contact-info bg-light p-4"
+                        data-aos="fade-up"
+                    >
+                        <div className="row">
+                            <div className="col-md-12 mb-4">
+                                <h2 className="h4">Contact Information</h2>
+                            </div>
+                            {CONTACTS.map((info, index) => (
+                                <div
+                                    key={index}
+                                    className="col-md-12"
+                                >
+                                    <p>
+                                        <span className={styles.contactTitleBlack}>{info.title}:</span> <a href={info.href}>{info.text}</a>
+                                    </p>
                                 </div>
-                                {CONTACTS.map((info, index) => (
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="col-md-1" />
+                    <div
+                        className="col-md-6"
+                        data-aos="fade-up"
+                    >
+                        <form
+                            onSubmit={onFormSubmit}
+                            noValidate
+                        >
+
+                            <div className="row">
+                                {FIELDS.slice(0, 2).map((field, index) => (
                                     <div
                                         key={index}
-                                        className="col-md-12"
+                                        className="col-md-6"
                                     >
-                                        <p>
-                                            <span className={styles.contactTitleBlack}>{info.title}:</span> <a href={info.href}>{info.text}</a>
-                                        </p>
+                                        <div className="form-group">
+                                            <InputField
+                                                id={field.id}
+                                                type={field.id === "phone" ? "tel" : "text"}
+                                                placeholder={field.placeholder}
+                                                register={register(field.id)}
+                                                error={errors[field.id]?.message}
+                                                disabled={isSubmitting}
+                                            />
+                                        </div>
                                     </div>
                                 ))}
                             </div>
-                        </div>
 
-                        <div className="col-md-1" />
-                        <div
-                            className="col-md-6"
-                            data-aos="fade-up"
-                        >
-                            <form
-                                onSubmit={onFormSubmit}
-                                noValidate
-                            >
-
-                                <div className="row">
-                                    {FIELDS.slice(0, 2).map((field, index) => (
-                                        <div
-                                            key={index}
-                                            className="col-md-6"
-                                        >
-                                            <div className="form-group">
-                                                <InputField
-                                                    id={field.id}
-                                                    type={field.id === "phone" ? "tel" : "text"}
-                                                    placeholder={field.placeholder}
-                                                    register={register(field.id)}
-                                                    error={errors[field.id]?.message}
-                                                    disabled={isSubmitting}
-                                                />
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                {FIELDS.slice(2, 4).map((field, index) => (
-                                    <div
-                                        key={index}
-                                        className="form-group"
-                                    >
-                                        <InputField
-                                            id={field.id}
-                                            placeholder={field.placeholder}
-                                            register={register(field.id)}
-                                            isTextarea={field.id === "message" ? true : false}
-                                            error={errors[field.id]?.message}
-                                            disabled={isSubmitting}
-                                        />
-                                    </div>
-                                ))}
-
-                                <div className="form-group">
-                                    <SubmitButton
-                                        isButtonDisabled={isButtonDisabled}
-                                        btnText={buttonText}
+                            {FIELDS.slice(2, 4).map((field, index) => (
+                                <div
+                                    key={index}
+                                    className="form-group"
+                                >
+                                    <InputField
+                                        id={field.id}
+                                        placeholder={field.placeholder}
+                                        register={register(field.id)}
+                                        isTextarea={field.id === "message" ? true : false}
+                                        error={errors[field.id]?.message}
+                                        disabled={isSubmitting}
                                     />
                                 </div>
+                            ))}
 
-                            </form>
-                        </div>
+                            <div className="form-group">
+                                <SubmitButton
+                                    isButtonDisabled={isButtonDisabled}
+                                    btnText={buttonText}
+                                />
+                            </div>
+
+                        </form>
                     </div>
                 </div>
-            </section>
+
+            </Container>
 
             <iframe
                 src="https://www.google.com/maps/d/embed?mid=1bMqi42sAqom4GUZwIcEVOdunVxZw1iQ&ehbc=2E312F"

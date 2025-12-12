@@ -5,6 +5,7 @@ import { TitleHeader } from "../utility/TitleHeader";
 import { TESTIMONIALS } from "@/constants/testimonials";
 import { useOwlCarousel } from "@/hooks/useOwlCarousel";
 import styles from "./Testimonials.module.css";
+import { Container } from "../utility/Container";
 
 const CAROUSEL_OPTIONS = {
     center: true,
@@ -35,60 +36,58 @@ export const Testimonials = memo(() => {
     const { carouselRef } = useOwlCarousel(CAROUSEL_OPTIONS);
 
     return (
-        <section className={`ftco-section testimony-section ${styles.testimonySection}`}>
-            <div className="container">
+        <Container className={`testimony-section ${styles.testimonySection}`}>
 
-                <TitleHeader
-                    subHeader="Testimony"
-                    header="Successful Stories"
-                    className="col-md-10"
-                    outerDivClassName="pb-3"
-                />
+            <TitleHeader
+                subHeader="Testimony"
+                header="Successful Stories"
+                className="col-md-10"
+                outerDivClassName="pb-3"
+            />
 
-                <div
-                    className="row"
-                    data-aos="fade-up"
-                >
-                    <div className="col-md-12">
-                        <div
-                            ref={carouselRef}
-                            className="carousel-testimony owl-carousel"
-                        >
+            <div
+                className="row"
+                data-aos="fade-up"
+            >
+                <div className="col-md-12">
+                    <div
+                        ref={carouselRef}
+                        className="carousel-testimony owl-carousel"
+                    >
 
-                            {TESTIMONIALS.map((review, index) => (
-                                <div
-                                    key={index}
-                                    className="item"
-                                >
-                                    <div className={`${styles.testimonyWrap} p-4 pb-5`}>
-                                        <div className={`text ${styles.testimonialText}`}>
-                                            <div className={styles.line}>
-                                                <p className={`mb-4 ${styles.pb1}`}>{review.text}</p>
-                                                <span className={styles.quote}>
-                                                    <i className="ion-ios-quote" />
-                                                </span>
-                                            </div>
+                        {TESTIMONIALS.map((review, index) => (
+                            <div
+                                key={index}
+                                className="item"
+                            >
+                                <div className={`${styles.testimonyWrap} p-4 pb-5`}>
+                                    <div className={`text ${styles.testimonialText}`}>
+                                        <div className={styles.line}>
+                                            <p className={`mb-4 ${styles.pb1}`}>{review.text}</p>
+                                            <span className={styles.quote}>
+                                                <i className="ion-ios-quote" />
+                                            </span>
+                                        </div>
 
-                                            <div className="d-flex align-items-center mt-4">
-                                                <div
-                                                    className={`user-img ${styles.userImg}`}
-                                                    style={{ backgroundImage: `url(${review.imgSrc})` }}
-                                                />
-                                                <div className={styles.userInfo}>
-                                                    <p className={styles.name}>{review.name}</p>
-                                                    <span className={styles.position}>Customer</span>
-                                                </div>
+                                        <div className="d-flex align-items-center mt-4">
+                                            <div
+                                                className={`user-img ${styles.userImg}`}
+                                                style={{ backgroundImage: `url(${review.imgSrc})` }}
+                                            />
+                                            <div className={styles.userInfo}>
+                                                <p className={styles.name}>{review.name}</p>
+                                                <span className={styles.position}>Customer</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            ))}
+                            </div>
+                        ))}
 
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </Container>
     )
 });
 

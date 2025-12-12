@@ -42,11 +42,11 @@ interface ImgSrc {
     imgSrc: string;
 }
 
-interface Href {
+export interface Href {
     href: string;
 }
 
-interface Icon {
+export interface Icon {
     icon: string;
 }
 

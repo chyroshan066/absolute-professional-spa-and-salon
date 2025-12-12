@@ -4,6 +4,7 @@ import { Children, ClassName, Title } from "@/types";
 import Link from "next/link";
 import { memo } from "react";
 import styles from "./Footer.module.css";
+import { Button } from "../utility/Button/Button";
 
 interface ColumnWrapperProps extends Title, Children, ClassName { }
 
@@ -28,20 +29,21 @@ export const Footer = memo(() => (
                 <ColumnWrapper title="Absolute Professional Spa & Salon">
                     <p>Experience authentic wellness and rejuvenation at Absolute Professional Spa & Salon. Offering seven specialized treatments including Warrior Thai, Sports Therapy, Pain Potli, and Hot Stone Therapy across our three convenient locations in Nepal and India.</p>
                     <ul className={`${styles.ftcoFooterSocial} ${styles.floatLeft} mt-3 ${styles.listUnstyled}`}>
+
                         {SOCIAL_LINKS.map((link, index) => (
                             <li
                                 key={index}
                                 data-aos="fade-up"
                             >
-                                <a
+                                <Button
                                     href={link.href}
-                                    target="_blank"
-                                >
-                                    <span className={`icon-${link.icon}`} />
-                                </a>
+                                    icon={link.icon}
+                                />
                             </li>
                         ))}
+
                     </ul>
+
                 </ColumnWrapper>
 
                 <ColumnWrapper title="Quick Links">

@@ -4,6 +4,7 @@ import { memo, useEffect } from "react";
 import { TitleHeader } from "../utility/TitleHeader";
 import { GALLERIES } from "@/constants";
 import styles from "./Gallery.module.css";
+import { Container } from "../utility/Container";
 
 export const Gallery = memo(() => {
     useEffect(() => {
@@ -60,54 +61,53 @@ export const Gallery = memo(() => {
     }, []);
 
     return (
-        <section className={`ftco-section`}>
-            <div className="container">
+        <Container>
 
-                <TitleHeader
-                    subHeader="Gallery"
-                    header="See the latest photos"
-                    className="col-md-7"
-                    outerDivClassName="pb-3"
-                />
+            <TitleHeader
+                subHeader="Gallery"
+                header="See the latest photos"
+                className="col-md-7"
+                outerDivClassName="pb-3"
+            />
 
-                <div className="row">
-                    {GALLERIES.map((img, index) => (
-                        <div
-                            key={index}
-                            className="col-md-3"
-                            data-aos="fade-up"
+            <div className="row">
+                {GALLERIES.map((img, index) => (
+                    <div
+                        key={index}
+                        className="col-md-3"
+                        data-aos="fade-up"
+                    >
+                        <a
+                            href={img}
+                            className={`${styles.gallery} image-popup img d-flex align-items-center`}
+                            style={{
+                                backgroundImage: `url(${img})`,
+                                display: 'block',
+                                position: 'relative',
+                                height: '250px',
+                                overflow: 'hidden',
+                                cursor: 'pointer'
+                            }}
                         >
-                            <a
-                                href={img}
-                                className={`${styles.gallery} image-popup img d-flex align-items-center`}
+                            {/* CRITICAL: Add a hidden img tag for Magnific Popup */}
+                            <img
+                                src={img}
+                                alt={`Gallery ${index + 1}`}
                                 style={{
-                                    backgroundImage: `url(${img})`,
-                                    display: 'block',
-                                    position: 'relative',
-                                    height: '250px',
-                                    overflow: 'hidden',
-                                    cursor: 'pointer'
+                                    display: 'none',
+                                    width: '100%',
+                                    height: 'auto'
                                 }}
-                            >
-                                {/* CRITICAL: Add a hidden img tag for Magnific Popup */}
-                                <img
-                                    src={img}
-                                    alt={`Gallery ${index + 1}`}
-                                    style={{
-                                        display: 'none',
-                                        width: '100%',
-                                        height: 'auto'
-                                    }}
-                                />
-                                <div className={`${styles.icon} mb-4 d-flex align-items-center justify-content-center`}>
-                                    <span className="icon-instagram" />
-                                </div>
-                            </a>
-                        </div>
-                    ))}
-                </div>
+                            />
+                            <div className={`${styles.icon} mb-4 d-flex align-items-center justify-content-center`}>
+                                <span className="icon-instagram" />
+                            </div>
+                        </a>
+                    </div>
+                ))}
             </div>
-        </section>
+
+        </Container>
     );
 });
 
