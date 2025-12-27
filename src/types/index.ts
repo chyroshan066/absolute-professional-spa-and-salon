@@ -1,69 +1,69 @@
 export interface Children {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 export interface ClassName {
-    className?: string
+  className?: string;
 }
 
 export interface Title {
-    title?: string;
+  title?: string;
 }
 
 export interface Message {
-    message: string;
+  message: string;
 }
 
 export interface IsVisible {
-    isVisible: boolean;
+  isVisible: boolean;
 }
 
 export interface AlertState extends Title, Message, IsVisible {
-    type: "success" | "error";
+  type: "success" | "error";
 }
 
 export interface Name {
-    name: string;
+  name: string;
 }
 
 export interface Description {
-    description: string;
+  description: string;
 }
 
 export interface Email {
-    email: string;
+  email: string;
 }
 
 export interface Text {
-    text: string;
+  text: string;
 }
 
 interface ImgSrc {
-    imgSrc: string;
+  imgSrc: string;
 }
 
 export interface Href {
-    href: string;
+  href: string;
 }
 
 export interface Icon {
-    icon: string;
+  icon: string;
 }
 
 interface Index {
-    index: string;
+  index: string;
 }
 
 interface Duration {
-    duration: number | string;
+  duration: number | string;
 }
 
 interface Price {
-    price: number;
+  price: number;
 }
 
 export interface Header {
-    header: string;
+  header: string;
 }
 
 export interface NavLink extends Name, Href {}
@@ -75,18 +75,19 @@ export interface SocialLink extends Icon, Href {}
 export interface Contact extends Service, Href {}
 
 export interface Therapy extends Index, Header {
-    section: {
-        title: string;
-        duration: number;
-        price: number;
-    }[];
+  section: {
+    title: string;
+    duration: number;
+    price: number;
+  }[];
 }
 
 export interface Pricing extends Duration, Price {
-    features: string[];
-} 
+  // features: string[];
+  branch: string;
+}
 
 export interface Team extends ImgSrc, Name, Text {
-    position: string;
-    social: SocialLink[];
+  position: string;
+  social: SocialLink[];
 }

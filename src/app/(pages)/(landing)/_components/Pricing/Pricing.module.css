@@ -1,5 +1,5 @@
 .dBlock {
-  display: block !important; 
+  display: block !important;
 }
 .block7 {
   margin-bottom: 30px;
@@ -9,7 +9,7 @@
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
   height: 95%;
   display: flex;
   flex-direction: column;
@@ -28,45 +28,46 @@
   font-weight: 500;
   margin-bottom: 10px;
   display: inline-block;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 .heading2 {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 600; 
+  font-weight: 600;
+  padding-bottom: 20px;
 }
 .price {
   margin: 0;
   padding: 0;
-  display: block; 
+  display: block;
 }
 .price sup {
   font-size: 24px;
   top: -1em;
-  color: #d9bf77; 
+  color: #d9bf77;
 }
 .number {
   font-size: 60px;
   font-weight: 500;
-  color: #d9bf77; 
+  color: #d9bf77;
 }
 .excerpt {
   margin-bottom: 20px;
-  color: #999999; 
+  color: #999999;
 }
 .pricingText {
-  flex-grow: 1; 
+  flex-grow: 1;
 }
-.pricingText, 
+.pricingText,
 .pricingText li {
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 .pricingText li {
   list-style: none;
   margin-bottom: 15px;
-  color: #4d4d4d; 
+  color: #4d4d4d;
 }
 .btnPrimary {
   color: #fff;
@@ -80,16 +81,16 @@
   left: 0;
   right: 0;
   width: 60%;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
-.btnPrimary:hover, 
+.btnPrimary:hover,
 .btnPrimary:focus {
   background: #d9bf77 !important;
-  color: #fff; 
+  color: #fff;
 }
-.block7:hover, 
+.block7:hover,
 .block7:focus {
   -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
   -moz-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
-  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11); 
+  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
 }
