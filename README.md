@@ -1,16 +1,16 @@
-# [Business_Name] Website
+# Absolute Professional Spa & Salon Website
 
-<!-- A modern, responsive e-commerce website for Pathivara Baby Store built with Next.js and TypeScript. Features include interactive product gallery, baby products showcase, newsletter subscription, and customer engagement tools delivering quality baby essentials in Itahari Chowk, Sunsari, Nepal. -->
+A modern, responsive Spa & Salon website for Absolute Professional Spa & Salon, built with Next.js and TypeScript. It features service showcases, treatment highlights, appointment booking, and customer engagement tools—delivering a premium wellness and beauty experience with a professional, elegant interface.
 
 ## 🍽️ About
 
-<!-- Pathivara Baby Store is a trusted baby products destination designed to provide parents and families with an exceptional online shopping experience. Located in Itahari Chowk, Sunsari, Nepal, the site features warm, welcoming design and intuitive navigation to showcase our complete range of baby clothes, toys, feeding essentials, nursery items, and quality products for newborns, infants, and toddlers. -->
+Absolute Professional Spa & Salon is a premier wellness and beauty destination designed to offer clients a refined and relaxing experience. The website reflects a calm, elegant aesthetic with intuitive navigation, showcasing our complete range of spa therapies, and professional treatments. Every detail is crafted to promote relaxation, confidence, and holistic well-being.
 
 ## ✨ Features
 
 - **Responsive Design** - Optimized for all devices (desktop, tablet, mobile)
 - **Online Appointments** - Easy contact us section with form validation
-- **Menu Showcase** - Beautiful presentation of <services/products>
+- **Menu Showcase** - Beautiful presentation of spa services
 - **Contact Information** - Easy-to-find location, hours, and contact details
 - **Performance Optimized** - Fast loading times and smooth user experience
 - **SEO Friendly** - Optimized for search engines and local discovery
@@ -28,18 +28,20 @@
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn package manager
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone [repository-url]
    cd <project_name>
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    # or
@@ -47,6 +49,7 @@
    ```
 
 3. **Run development server**
+
    ```bash
    npm run dev
    # or
@@ -68,25 +71,25 @@ npm run start
 ## 🏗️ Project Structure
 
 ```
-<project_name>/
+absolute-professional-spa-and-salon/
 ├── .github/
 ├── public/
 │   ├── fonts/
-│   │   ├── /
-│   │   │   ├── .woff2
+│   │   ├── flaticon/
+│   │   │   ├── Flaticon.eot
 │   │   │   ├── ...
-│   │   │   └── .woff2
-│   │   └── /
-│   │   │   ├── .woff2
-│   │   │   └── .woff2
+│   │   │   └── Flaticon.woff
+│   │   ├── ...
+│   │   └── prata/
+│   │       └── Prata-Regular.woff2
 │   ├── images/
-│   │   ├── /
+│   │   ├── gallery/
 │   │   ├── ...
-│   │   └── .webp
-│   ├── favicon_io/
-│   │   ├── favicon.ico
+│   │   └── preview.webp
+│   ├── js/
+│   │   ├── aos.js/
 │   │   ├── ...
-│   │   └── site.webmanifest
+│   │   └── scrollax.min.js
 │   └── robots.txt
 ├── src/
 │   ├── app/
@@ -95,29 +98,33 @@ npm run start
 │   │   └── (pages)
 │   ├── components/
 │   │   ├── utility/
-│   │   │   ├── /
+│   │   │   ├── Button/
 │   │   │   ├── ....
-│   │   │   └── .tsx
-│   │   ├── /
+│   │   │   └── TitleHeader.tsx
+│   │   ├── Alert/
 │   │   ├── ...
-│   │   └── .tsx
+│   │   └── Loader.tsx
 │   ├── constants/
-│   │   ├── .ts
+│   │   ├── contact-links.ts
 │   │   ├── ...
-│   │   └── .ts
+│   │   └── treatments.ts
 │   ├── hooks/
 │   │   ├── useAlert.ts
 │   │   ├── useFormSubmission.ts
-│   │   └── .ts
+│   │   └── useOwlCarousel.ts
+│   ├── styles/
+│   │   ├── animate.css
+│   │   ├── ...
+│   │   └── owl.theme.default.min.css
 │   ├── middlewares/
 │   │   └── schema.ts
 │   ├── types/
 │   │   ├── index.ts
+│   │   └── jquery.d.ts
 │   └── utils/
 │       ├── clsx.ts
 │       ├── ...
 │       └── subscriptionData.ts
-├── .env.example
 ├── .gitignore
 ├── eslint.config.mjs
 ├── next.config.ts
@@ -134,16 +141,19 @@ npm run start
 ## 🎨 Key Components
 
 ### Contact Form
+
 - Form validation with error handling
 - Real-time form feedback
 - Mobile-optimized interface
 
 ### Service Display
-- Categorized <services/products>
+
+- Categorized spa services
 
 ## 📱 Responsive Design
 
 The website is fully responsive and tested on:
+
 - **Desktop**: 1920px and above
 - **Laptop**: 1024px - 1919px
 - **Tablet**: 768px - 1023px
@@ -153,7 +163,7 @@ The website is fully responsive and tested on:
 
 ### Custom Domain Setup
 
-The website is configured for the custom domain `<domain_name>`:
+The website is configured for the custom domain `absoluteprofessionalspa.com.np`:
 
 1. DNS records are configured for the domain
 2. SSL certificates are automatically provisioned
@@ -169,11 +179,13 @@ The website is configured for the custom domain `<domain_name>`:
 ## 🧪 Testing
 
 Run the test suite:
+
 ```bash
 npm run test
 ```
 
 Check code quality:
+
 ```bash
 npm run lint
 npm run type-check
@@ -192,7 +204,7 @@ npm run type-check
 
 The website is deployed on Vercel with automatic deployments:
 
-- **Production**: https://<domain_name>
+- **Production**: https://www.absoluteprofessionalspa.com.np/
 - **Preview**: Automatic preview deployments for pull requests
 
 ### Manual Deployment
@@ -205,19 +217,21 @@ npm run export  # if using static export
 ## 📞 Support & Maintenance
 
 ### Client Information
-- **<business_category>**: <business_name>
-- **Domain**: <domain_name>
+
+- **Spa**: Absolute Professional Spa & Salon
+- **Domain**: absoluteprofessionalspa.com.np
 - **Deployment**: Vercel
 
 ### Developer Contact
+
 For technical support or website updates, contact the developer.
 
 ## 📝 License
 
-This project is proprietary software developed specifically for <business_name>.
+This project is proprietary software developed specifically for Absolute Professional Spa & Salon.
 
 ---
 
-**Built with ❤️ for <business_name>**
+**Built with ❤️ for Absolute Professional Spa & Salon**
 
-*For any questions or support regarding this website, contact **[chyroshan066](https://github.com/chyroshan066)**.*
+_For any questions or support regarding this website, contact **[chyroshan066](https://github.com/chyroshan066)**._
